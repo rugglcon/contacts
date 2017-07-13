@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Connor Ruggles <cruggles@iastate.edu> -->
+<component type="desktop">
+	<id>com.github.rugglcon.contacts.desktop</id>
+	<metadata_license>CC0</metadata_license>
+	<name>Contacts</name>
+	<summary>Keep a list of all important (or not so important) acquaintences.</summary>
+	<description>
+		<p>Create, view, and delete contacts locally stored on your computer.</p>
+	</description>
+	<url type="bugtracker">https://github.com/rugglcon/contacts/issues</url>
+	<custom>
+		<value key="x-appcenter-suggested-price">1</value>
+	</custom>
+</component>
