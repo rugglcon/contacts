@@ -20,17 +20,17 @@
 */
 public class Contacts : Gtk.Application {
     public Contacts () {
-        Object (application_id: "com.github.rugglcon.contacts",
+        Object (application_id: _("com.github.rugglcon.contacts"),
         flags: ApplicationFlags.FLAGS_NONE);
     }
 
     protected override void activate () {
         var window = new Gtk.ApplicationWindow (this);
-        window.title = "Contacts";
+        window.title = _("Contacts");
         window.set_default_size (1024, 768);
-        var btn = new Gtk.Button.with_label ("Create Contact");
+        var btn = new Gtk.Button.with_label (_("Create Contact"));
         btn.clicked.connect (() => {
-            btn.label = "jk";
+            btn.label = _("jk");
             btn.set_sensitive (false);
         });
 

@@ -36,5 +36,8 @@ PACKAGES
 
 add_executable(${EXEC_NAME} ${VALA_C})
 install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data.com.github.rugglcon.contacts.desktop DESTNATION ${DATADIR}/applications/)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data.com.github.rugglcon.contacts.appdata.xml DESTNATION ${DATADIR}/metainfo/)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.rugglcon.contacts.desktop DESTINATION ${DATADIR}/applications/)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.rugglcon.contacts.appdata.xml DESTINATION ${DATADIR}/metainfo/)
+set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
+add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACAKGE}\")
+add_subdirectory (po)
