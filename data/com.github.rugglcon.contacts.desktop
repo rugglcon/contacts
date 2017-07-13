@@ -1,0 +1,11 @@
+[Desktop Entry]
+name=Contacts
+GenericName=Contacts App
+Comment=Create and view contacts
+Categories=Utility;Education;
+Exec=com.github.rugglcon.contacts
+Icon=application-default-icon
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=contacts
+Keywords=Contacts;Mail;
