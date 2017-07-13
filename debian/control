@@ -1,0 +1,15 @@
+Source: contacts
+Section: x11
+Priority: extra
+Maintainer: Connor Ruggles <cruggles@iastate.edu>
+Build-Depends: cmake (>= 2.8),
+							 cmake-elementary,
+               debhelper (>= 9),
+               valac-0.26 | valac (>= 0.26)
+Standards-Version: 3.9.3
+
+Package: contacts
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Hey young world
+ This is a Hello World written in Vala using CMake build system.
