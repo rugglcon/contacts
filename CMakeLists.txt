@@ -1,4 +1,4 @@
-contacts (com.github.rugglcon.contacts)
+project (com.github.rugglcon.contacts)
 
 cmake_minimum_required (VERSION 2.6)
 
@@ -7,9 +7,9 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/src)
 
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 
-set (PKGDATADIR "${DATADIR}/com.github.rugglcon/contacts")
+set (PKGDATADIR "${DATADIR}/com.github.rugglcon.contacts")
 
-set (EXEC_NAME "com.github.rugglcon/contacts")
+set (EXEC_NAME "com.github.rugglcon.contacts")
 set (RELEASE_NAME "A contacts app.")
 set (VERSION "0.1")
 set (VERSION_INFO "first version")

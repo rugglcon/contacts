@@ -19,20 +19,27 @@
 * Authored by: Connor Ruggles <cruggles@iastate.edu>
 */
 public class Contacts : Gtk.Application {
-	public Contacts () {
-		Object (application_id: "com.github.rugglcon.contacts",
-		flags: ApplicationFlags.FLAGS_NONE);
-	}
+    public Contacts () {
+        Object (application_id: "com.github.rugglcon.contacts",
+        flags: ApplicationFlags.FLAGS_NONE);
+    }
 
-	protected override void activate () {
-		var window = new Gtk.ApplicationWindow(this);
-		window.title = "Contacts";
-		window.set_default_size (1024, 768);
-		window.show_all ();
-	}
+    protected override void activate () {
+        var window = new Gtk.ApplicationWindow (this);
+        window.title = "Contacts";
+        window.set_default_size (1024, 768);
+        var btn = new Gtk.Button.with_label ("Create Contact");
+        btn.clicked.connect (() => {
+            btn.label = "jk";
+            btn.set_sensitive (false);
+        });
 
-	public static int main (string[] args) {
-		var app = new Contacts ();
-		return app.run (args);
-	}
+        window.add (btn);
+        window.show_all ();
+    }
+
+    public static int main (string[] args) {
+        var app = new Contacts ();
+        return app.run (args);
+    }
 }
